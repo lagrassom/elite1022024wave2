@@ -12,6 +12,12 @@ Each application allows the user to interact in different ways
     - Gui application with 3 radio buttons and 2 text fields
     - Renders the query results as a table in the gui
     - Class based approach
+- flask_poke_app.py
+    - A Flask application
+    - localhosted webpage with several routes
+    - Links to different pages to handle the different query types/results
+    - Probably more routing than necessary, but it's mostly to show the capabilities
+    - I'm not consistent with inline HTML and HTML files
 
 I'm not going to win any awards for UI/UX with this, but I'm a data engineer so I'm going for function over form.
 
