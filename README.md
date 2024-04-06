@@ -7,6 +7,11 @@ Each application allows the user to interact in different ways
     - A simple command line application
     - Prompts the user for text instruction, and renders it back as text
     - Functional code with a simple repl loop
+- gui_poke_app.py
+    - A tkinter application
+    - Gui application with 3 radio buttons and 2 text fields
+    - Renders the query results as a table in the gui
+    - Class based approach
 
 I'm not going to win any awards for UI/UX with this, but I'm a data engineer so I'm going for function over form.
 
