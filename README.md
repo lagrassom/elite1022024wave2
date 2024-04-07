@@ -15,9 +15,9 @@ Each application allows the user to interact in different ways
 - flask_poke_app.py
     - A Flask application
     - localhosted webpage with several routes
-    - Links to different pages to handle the different query types/results
-    - Probably more routing than necessary, but it's mostly to show the capabilities
-    - I'm not consistent with inline HTML and HTML files
+    - Uses bootstrap (poorly) for CSS/styling
+    - Takes advantage of img elements to pull an image of the pokemon from the web
+    - This web app is very ugly, the HTML/Javascript is bad, and I will not apologize for that
 
 I'm not going to win any awards for UI/UX with this, but I'm a data engineer so I'm going for function over form.
 
