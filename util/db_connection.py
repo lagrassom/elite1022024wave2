@@ -2,20 +2,20 @@ import mysql.connector
 
 
 ALL_POKES_QUERY = """
-    SELECT name, type1, type2
+    SELECT poke.id, name, type1, type2
     FROM pokedex_project.pokemon as poke
         INNER JOIN pokedex_project.type as types
             ON poke.type_id = types.type_id
     ORDER BY poke.id"""
 PRIMARY_TYPE_QUERY = """
-    SELECT name, type1, type2
+    SELECT poke.id, name, type1, type2
     FROM pokedex_project.pokemon as poke
         INNER JOIN pokedex_project.type as types
             ON poke.type_id = types.type_id
     WHERE lower(type1) = lower(%s)
     ORDER BY poke.id"""
 PRIMARY_SECONDARY_TYPE_QUERY = """
-    SELECT name, type1, type2
+    SELECT poke.id, name, type1, type2
     FROM pokedex_project.pokemon as poke
         INNER JOIN pokedex_project.type as types
             ON poke.type_id = types.type_id
@@ -54,9 +54,10 @@ def fetch_pokemon(type1:str = None, type2:str = None) -> list:
 
     for row in cursor:
         pokemon.append({
-            'name': row[0],
-            'type1': row[1],
-            'type2': row[2]
+            'id': row[0],
+            'name': row[1],
+            'type1': row[2],
+            'type2': row[3]
         })
 
     cursor.close()
