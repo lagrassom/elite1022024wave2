@@ -29,3 +29,5 @@ I'm not going to win any awards for UI/UX with this, but I'm a data engineer so 
 4. Execute the following command: pip install -r setup/requirements.txt
 
 You should now have a pokedex_project schema, complete with pokemon, type, ability, species, and gender tables, as well as a local pokedex_project db user with password 'password' that has full privileges on all objects in that schema.
+The gui and cli applications can simply be run as python scripts. The flask app can be started with the following command run at the root of the repository:
+    python -m flask --app flask_poke_app run
