@@ -1,6 +1,6 @@
 # Overview
 This is a set of example applications connecting a python application to a mysql db. This repo has all you need to setup the database and run the apps included.
-The 3 applications share a single helper script, the util/db_connection.py script. It has a single function, fetch_pokemon, that will connect to that schema as the pokedex_project user, execute a single query, and return a list of dictionarys
+The 3 applications share a single helper script, the util/db_connection.py script. It has a single function, fetch_pokemon, that will connect to that schema as the pokedex_project user, execute a single query, and return a list of dictionaries
 
 Each application allows the user to interact in different ways
 - command_line_poke_app.py
